@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="/app/products/add/new">
+    <label for="title">Title</label><br>
+    <input type="text" id="title" name="title"><br>
+    <label for="cost">Cost</label><br>
+    <input type="text" id="cost" name="cost"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<a th:href="@{http://localhost:6868/app/products/}">back<a/>
+</body>
+</html>
